@@ -38,10 +38,30 @@ button{
 }
 
 
+/* ================================== */
 
 
+.div3 , .div4{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.input3 , .input4{
+    width: 94px;
+    outline: none;
+    display: inline-block;
+}
 
 
+.transition{
+    transition-duration: 2s;
+}
+
+.error{
+    transform: scaleX();
+}
 
 
 
