@@ -1,0 +1,40 @@
+.div1{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.input-box{
+    
+    display: inline-block;
+    
+}
+
+.div2{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.input-box2{
+    
+    display: inline-block;
+    
+}
+
+.div3{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+
+.wrap{
+    display: inline-block;
+}
+
+.trans{
+    transition-duration: 2s;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/jQuery.css">
+    <title>jQuery Practice</title>
+
+
+</head>
+<body>
+
+
+
+    <div>
+        <div class="div1" id="div1"></div>
+    </div>
+
+    <div class="input-box">
+        <input type="text" class="input" id="input">
+    </div>
+
+    <button id="btn">변경</button>
+    
+    
+    <script>
+        // 버튼 요소를 가져오고
+        $("#btn").on("click", () => {
+            // 버튼 요소가 클릭되었을 때, 인풋 값에 맞게 상자 색깔 변형
+            $("#div1").css("backgroundColor", $("#input").val());
+            
+        });
+    </script>
+
+
+
+    <div>
+        <div class="div2"></div>
+        <div class="div2"></div>
+        <div class="div2"></div>
+        <div class="div2"></div>
+        <div class="div2"></div>
+    </div>
+
+    <div class="input-box2">
+        <input type="text" class="input2">
+        <input type="text" class="input2">
+        <input type="text" class="input2">
+        <input type="text" class="input2">
+        <input type="text" class="input2">
+    </div>
+
+    <dir>
+        <button id="btn1">변경</button>
+    </dir>
+
+
+    <script>
+        const boxArr = $(".div2");
+        const inputArr = $(".input2");
+        
+
+        // 버튼 요소 가져오기
+        $("#btn1").on("click", () =>{
+            for(let i = 0; i < boxArr.length; i++){
+                $(boxArr[i]).css("backgroundColor",$(inputArr[i]).val());
+            }
+        });
+    </script>
+
+
+
+    <div class="wrap">
+        <div class="div3"></div>
+        <input type="text" class="input3">
+    </div>
+
+    <div class="wrap">
+        <div class="div3"></div>
+        <input type="text" class="input3">
+    </div>
+
+    <div class="wrap">
+        <div class="div3"></div>
+        <input type="text" class="input3">
+    </div>
+
+    <div class="wrap">
+        <div class="div3"></div>
+        <input type="text" class="input3">
+    </div>
+
+    <div class="wrap">
+        <div class="div3"></div>
+        <input type="text" class="input3">
+    </div>
+
+
+
+    <script>
+        const boxArr3 = $(".div3");
+        const inputArr3 = $(".input3");
+
+
+        for(let i =0; i< inputArr3.length; i++){
+            $(inputArr3[i]).on("input", () =>{
+                $(boxArr3[i]).css("backgroundColor", $(inputArr3[i]).val());
+                $(boxArr3[i]).addClass("trans");
+            });
+        }
+    </script>
+
+
+</body>
+</html>
