@@ -1,7 +1,7 @@
 document.getElementById("lottoBtn").addEventListener("click", function(){
     
     // 로또 번호 6자리 배열 생성 하기
-    let lotto = [6];
+    let lotto = [];
     
     // 로또 번호 생성하기
     let lottoNum = Math.floor(Math.random() * 45 + 1);

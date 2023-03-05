@@ -17,13 +17,16 @@ function readValue() {
         
         bg.innerHTML += "<p><span>" + input.value + "</span></p>";
         bg.scrollTop = bg.scrollHeight;
+        
     }
     else{
+        console.log(input.value.trim().length);
         alert("채팅을 입력해주세요.");
     }
 
     // 채팅창 인풋값 초기화
     input.value = "";
+    
 }
 
 
