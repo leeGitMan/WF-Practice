@@ -3,13 +3,16 @@ document.getElementById("lottoBtn").addEventListener("click", function(){
     // 로또 번호 6자리 배열 생성 하기
     let lotto = [];
     
-    // 로또 번호 생성하기
-    let lottoNum = Math.floor(Math.random() * 45 + 1);
     
-
+    
     // 로또 배열 길이만큼 와일문 돌리기
     while(lotto.length < 6){
+        
+        let lottoNum = Math.floor(Math.random() * 45 + 1);
+        // 로또 번호 생성하기
         // 만약 중복된 숫자가 없을 경우 --> indexOf == -1 배열에 로또 번호를 집어넣기
+        console.log(lottoNum)
+        
         if(lotto.indexOf(lottoNum) == -1){
             // push로 로또 번호 뒤에서부터 밀어넣기
             lotto.push(lottoNum);
