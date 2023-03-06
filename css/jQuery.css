@@ -38,3 +38,17 @@
 .trans{
     transition-duration: 2s;
 }
+
+
+
+.wrap{
+    display: inline-block;
+}
+
+.div4 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    transition-duration: 2s;
+}
+

@@ -60,7 +60,9 @@
         <button id="btn1">변경</button>
     </dir>
 
+<hr><hr>
 
+    
     <script>
         const boxArr = $(".div2");
         const inputArr = $(".input2");
@@ -76,10 +78,7 @@
 
 
 
-    <div class="wrap">
-        <div class="div3"></div>
-        <input type="text" class="input3">
-    </div>
+
 
     <div class="wrap">
         <div class="div3"></div>
@@ -101,6 +100,13 @@
         <input type="text" class="input3">
     </div>
 
+    <div class="wrap">
+        <div class="div3"></div>
+        <input type="text" class="input3">
+    </div>
+
+    
+    <hr><hr><hr>
 
 
     <script>
@@ -114,6 +120,55 @@
                 $(boxArr3[i]).addClass("trans");
             });
         }
+    </script>
+
+   
+
+
+    <div class="wrap">
+        <div class="div4"></div>
+        <input type="text" class="input4">
+    </div>
+
+    <div class="wrap">
+        <div class="div4"></div>
+        <input type="text" class="input4">
+    </div>
+
+    <div class="wrap">
+        <div class="div4"></div>
+        <input type="text" class="input4">
+    </div>
+
+    <div class="wrap">
+        <div class="div4"></div>
+        <input type="text" class="input4">
+    </div>
+
+    <div class="wrap">
+        <div class="div4"></div>
+        <input type="text" class="input4">
+    </div>
+
+    <button id="btn4">리셋</button>
+
+
+
+    <script>
+        const boxArr4 = $(".div4");
+        const inputArr4 = $(".input4");
+
+        for(let i = 0; i < inputArr4.length; i++){
+            $(inputArr4[i]).on("input" , function(){
+                $(boxArr4[i]).css("backgroundColor", $(inputArr4[i]).val());
+                $(inputArr4[i]).css("borderColor", $(inputArr4[i]).val()).css("color", $(inputArr4[i]).val());
+            });
+        }
+
+        $("#btn4").on("click", function(){
+            $(boxArr4).css("backgroundColor", "");
+            $(inputArr4).css("borderColor"  , "").css("color", "").val("");
+        });
     </script>
 
 
